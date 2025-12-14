@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="LeeJava.js" defer></script>
+    <title>LabActivity4</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="navbar">
+  <h2>
+    <a href="#home">Home</a> |
+    <a href="https://steamcommunity.com/profiles/76561198925279597/">My Steam page</a>
+  </h2>
+</div>
+
+<hr>
+
+<!-- MAIN CONTENT -->
+<div id="main-content">
+  <div class="left-column" id="home">
+    <img class="profile-img" src="image.jpg" alt="Profile Image">
+    <h2 class="name">Frank Gwyn G. Lee</h2>
+    <div class="job-title">NUFV Student</div>
+
+    <!-- INTERACTIVE BUTTONS -->
+    <div style="text-align:center; margin-bottom:12px;">
+      <button id="themeBtn">Change Theme</button>
+      <button id="editTitleBtn">Edit Job Title</button>
+      <button id="toggleSkillsBtn">Show / Hide Skills</button>
+    </div>
+
+    <h3>Introduction</h3>
+    <p class="intro">
+      I am an NU Fairview student following my passion for Information Technology;
+      I enjoy writing and collecting modelkits.
+    </p>
+
+    <hr>
+
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:frankgwynglee@gmail.com">frankgwynglee@gmail.com</a></p>
+      <p>Phone No. +63 9560979650</p>
+    </div>
+
+    <hr>
+
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Adaptive</li>
+        <li>Writing</li>
+        <li>Python</li>
+      </ul>
+
+      <h3>Achievements and Experiences</h3>
+      <ul>
+        <li>Made an RFID attendance for Active Thinking Daycare Center</li>
+        <li>Finished 1st year BSIT with High Honors</li>
+        <li>Graduated NSTP2 with awards</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right-column" id="about">
+    <h2>About Me</h2>
+    <p class="about-text">Just a 2nd year student trying his best to live.</p>
+
+    <hr>
+
+    <div class="message-form">
+      <h2>Message Me</h2>
+
+      <!-- FORM (JS NEEDS THIS ID) -->
+      <form id="contactForm">
+        <p>
+          Name:<br>
+          <input type="text" name="name">
+        </p>
+
+        <p>
+          Email:<br>
+          <input type="email" name="email">
+        </p>
+
+        <!-- MESSAGE BOX UNDER EMAIL -->
+        <p>
+          Message:<br>
+          <textarea id="message" maxlength="200"></textarea>
+          <small id="charCount">200 characters left</small>
+        </p>
+
+        <p>
+          <input type="submit" value="Send">
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<footer class="site-footer">
+  <p>
+    <strong>WebProg - Web Programming 2025</strong> |
+    <span id="date"></span>
+  </p>
+</footer>
+
+</body>
+</html>
